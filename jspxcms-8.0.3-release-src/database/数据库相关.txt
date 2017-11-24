@@ -1,0 +1,9 @@
+PLUG_WECHATTAG.sql
+PLUG_WECHATUSER.sql
+PLUG_WXMENU_BUTTON.sql
+这三个表是离职同事之前完成的微信的相关部分
+
+【注意】
+所有二次开发代码都是放入src\main\java\com\jspxcms\plug文件下的
+二次开发的表是以PLUG_开头
+

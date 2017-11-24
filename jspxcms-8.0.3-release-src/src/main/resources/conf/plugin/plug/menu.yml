@@ -1,0 +1,85 @@
+600-1000:
+  name: resume.management
+  url: plug/resume/list.do
+  perms: plug:resume:list
+  ops:
+    - create@plug:resume:create
+    - copy@plug:resume:copy
+    - edit@plug:resume:edit
+    - save@plug:resume:save
+    - update@plug:resume:update
+    - delete@plug:resume:delete
+
+#微信后台管理
+5000:
+  name: navigation.wechat
+  icon: glyphicon glyphicon-list
+  perms: nav_wxmenu
+  
+#菜单管理
+5000-100:
+  name: wxmenu.management
+  url: plug/wxmenu/list.do
+  perms: plug:wxmenu:list
+  ops:
+    - create@plug:wxmenu:create
+    - edit@plug:wxmenu:edit
+    - save@plug:wxmenu:save
+    - update@plug:wxmenu:update
+    - delete@plug:wxmenu:delete
+    - enable@plug:wxmenu:enable
+    - cancleEnable@plug:wxmenu:cancleEnable
+    - reload@plug:wxmenu:reload
+    
+#素材管理
+5000-200:
+  name: wxmenu.material
+  icon: glyphicon glyphicon-list
+  perms: nav_wxmenu_material
+
+5000-200-100:
+  name: wxmenu.material.news
+  url: plug/wxmenu/list.do
+  perms: plug:wxmenu:list
+
+5000-200-200:
+  name: wxmenu.material.image
+  url: core/web_file_2/list.do,core/web_file_2/left.do?noSelect=true
+  perms: core:web_file_2:list,core:web_file_2:left
+  ops:
+    - webFile.createText@core:web_file_2:create
+    - webFile.createDir@core:web_file_2:create_dir
+    - copy@core:web_file_2:copy
+    - edit@core:web_file_2:edit
+    - webFile.open@core:web_file_2:open
+    - save@:web_file_2:save
+    - update@core:web_file_2:update
+    - delete@core:web_file_2:delete
+    - webFile.rename@core:web_file_2:rename
+    - webFile.mkdir@core:web_file_2:mkdir
+    - webFile.move@core:web_file_2:move
+    - webFile.zip@core:web_file_2:zip
+    - webFile.zipDownload@core:web_file_2:zip_download
+    - webFile.unzip@core:web_file_2:unzip
+    - webFile.upload@core:web_file_2:upload
+    - webFile.zipUpload@core:web_file_2:zip_upload
+    - webFile.siteFile@core:web_file_2:site_file
+
+5000-200-300:
+  name: wxmenu.material.video
+  url: plug/wxmenu/list.do
+  perms: plug:wxmenu:list
+
+5000-200-400:
+  name: wxmenu.material.voice
+  url: plug/wxmenu/list.do
+  perms: plug:wxmenu:list
+
+#微信用户管理
+5000-300:
+  name: wechat.usermanage
+  url: plug/wechatuser/list.do
+  perms: plug:wechatuser:list
+  ops: 
+      - taglist@plug:wechatuser:taglist
+      - 
